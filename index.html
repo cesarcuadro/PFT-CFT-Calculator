@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PFT/CFT Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pftCalculator.css">
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed>
+        <div id="calcmini">
+
+            <div id="calc-header" style="padding: 2px; margin-left: 2px; margin-right: 2px;">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td width="34px">
+                                <img>
+                            </td>
+                            <td>PFT/CFT Calculator</td>
+                            <td width="34px">
+                                <img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <table width="100%">
+                <tbody>
+                    <tr></tr>
+                    <tr>
+                        <td id="heading" colspan="2">
+                            <div class="widget" style="text-align: center;">
+                                <label for="pfttest_sel" class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-lable ui-checkboxradio-checked ui-state-active">PFT Test</label>
+                                <input type="radio" name="pfttest_sel" id="pfttest_sel" checked="checked" value="pft" class="ui-checkboxradio-label ui-helper-hidden-accessible">
+                                <label for="cfttest_sel" class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label">CFT Test</label>
+                                <input type="radio" name="cfttest_sel" id="cfttest_sel" value="cft" class="ui-checkboxradio ui-helper-hidden-accessible">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="heading" style="padding: 0;">
+                            <div>
+                                <ol id="selectable" class="ui-selectable">
+                                    <li id="Male" class="ui-widget-content ui-selectee">Male</li>
+                                    <li id="Female" class="ui-widget-content ui-selectee">Female</li>
+                                </ol>
+                            </div>
+                        </td>
+                        <td id="heading">
+                            <div style="align-content: center;">
+                                <label style="font-size: 1.5em;">Age: </label>
+                                <input type="number" name="age" id="age" alt="age" min="17" max="51" value="17">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div id="pfttest">
+
+                <div id="event-header" style="padding: 2px;">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img>
+                                </td>
+                                <td>
+                                    <div style="font-weight: bold; text-align: center; color: black;">Pushups/Pullups</div>
+                                </td>
+                                <td style="float: right;">
+                                    <a></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="event">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;">Choose Event:</td>
+                                <td style="float: right; padding: 5px;">
+                                    <div>
+                                        <select name="hybrid" id="hybrid" style="display: none;">
+                                            "Hybrid Event "
+                                            <option value="Pullups" selected="selected">Pullups</option>
+                                            <option value="Pushups">Pushups</option>
+                                        </select>
+                                        <span tabindex="0" id="hybrid-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="hybrid-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget" style="width: 116px;">
+                                            <span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
+                                            <span class="ui-selectmenu-text">Pullups</span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="pp-slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                        <div id="pp-handle" class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 50%;">12</div>
+                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div id="event-header" style="padding: 2px;">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img>
+                                </td>
+                                <td>
+                                    <div style="font-weight: bold; text-align: center; color: black;">Crunches</div>
+                                </td>
+                                <td style="float: right;">
+                                    <a>
+                                        <img>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="event">
+                    <div id="cr-slider" style="margin-top: 20px;" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                        <div id="cr-handle" class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 51.4286%;">88</div>
+                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="51.4286%"></div>
+                    </div> 
+                </div>
+                <div id="event-header" style="padding: 2px;">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img>
+                                </td>
+                                <td>
+                                    <div style="font-weight: bold; text-align: center; color: black;">Running/Rowing</div>
+                                </td>
+                                <td style="float: right;">
+                                    <a>
+                                        <img>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="event" style="padding-bottom: 10px;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;" width="50%">Choose Event:</td>
+                                <td style="float: right; padding: 5px;">
+                                    <div>
+                                        <select name="run-row" id="run-row" style="display: none;">
+                                            <option value="0" selected="selected">3 Mile Run</option>
+                                            <option value="1">3 Mile Run (Altitude)</option>
+                                            <option value="2">5k Rowing</option>
+                                            <option value="3">5k Rowing (Altitude)</option>
+                                        </select>
+                                        <span tabindex="0" id="run-row-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="run-row-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget" style="width: 141px;">
+                                            <span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
+                                            <span class="ui-selectmenu-text">3 Mile Run</span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>Time (MM:SS):</td>
+                                <td>
+                                    <div id="run-time-box" style="float: right;">
+                                        <input id="run-input" alt="Run Time" data-inputmask="'mask': '99:99'">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div id="cfttest"></div>
+
+            <div id="pft_scoring_section">
+                <div id="sectionheader" style="font-weight: bold; text-align: center;">PFT Results</div>
+                <div id="scoring">
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label id="pp_label">Pullups</label>
+                                    </td>
+                                    <td width="40%">
+                                        <input type="text" id="amount" alt="Hybrid Event Score" readonly style="border: 0; color: #f6931f;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Crunches</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="amount2" alt="Crunches Event Score" readonly style="border: 0; color: #f6931f;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label id="rr_label">Run Time</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="amount3" alt="Run Time Score" readonly style="border: 0; color: #f6931f;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="border-top: thick double #990000;"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label style="font-weight: bold;">Total PFT Score</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="totalscore" alt="PFT Total Score" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td class="star" style="display: none;float: right;">
+                                        <div class="spiralContainer">
+                                            <div class="spiral"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <input type="text" id="result" alt="PFT Results Class" readonly style="border: 0px; color: rgb(0, 128, 0); font-weight: bold;">
+                                        </div>
+                                    </td>
+                                    <td class="star" style="display: none;">
+                                        <div class="spiralContainer">
+                                            <div class="spiral"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <div id="ffi_note" style="display: none;">*Force Fitness Instructor Qualified</div>
+                                        <div class="bcp_note" style="display: none;">*Exempt from height/weight standards</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <div>
+                                            <button class="ui-button ui-widget ui-corner-all" id="calc">Refresh</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cft_scoring_section"></div>
+
+        </div>
+        
+        <script src="pftCalculator.js" async defer></script>
+    </body>
+</html>
